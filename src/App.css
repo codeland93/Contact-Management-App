@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Basic styling for the app */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8; /* Soft light background */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem; /* Larger header */
+  font-weight: bold;
+}
+
+/* Container for the contact list and details */
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Styling for the contact list */
+.contact-list {
+  width: 40%;
+  padding: 15px;
+  background-color: #ffffff; /* White background for contrast */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+/* Add hover effect for the contact list */
+.contact-list:hover {
+  transform: translateY(-2px);
+}
+
+/* Individual contact item styling */
+.contact-item {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding-left 0.3s ease; /* Smooth transition */
+  display: flex;
+  justify-content: space-between; /* Aligns text to the left and adds space */
+}
+
+.contact-item:hover {
+  background-color: #e3f2fd; /* Light blue hover effect */
+  padding-left: 15px; /* Slight indent on hover */
+}
+
+/* Selected contact details styling */
+.contact-details {
+  width: 40%;
+  padding: 15px;
+  background-color: #ffffff; /* White background for contrast */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+/* Add hover effect for the contact details */
+.contact-details:hover {
+  transform: translateY(-2px);
+}
+
+/* Details heading */
+.contact-details h2 {
+  margin-top: 0;
+  color: #007bff; /* Primary color for headings */
+}
+
+/* Styled message when no contact is selected */
+.contact-details p {
+  color: #777; /* Gray color for the message */
+  font-style: italic;
+}
+
+/* Button styling (if you decide to add buttons later) */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Primary color for buttons */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center; /* Center items */
+  }
+
+  .contact-list, .contact-details {
+    width: 90%; /* Make lists full width on small screens */
+  }
+}
